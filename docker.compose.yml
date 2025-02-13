@@ -1,0 +1,12 @@
+name: First App System
+
+services:
+  app:
+    image: jawadc/firstapp:latest
+    ports:
+      - 3000:3000
+    volumes:
+      - ./:/app
+
+  db:
+    image: mongo:latest

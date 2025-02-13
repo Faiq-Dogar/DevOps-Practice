@@ -1,0 +1,17 @@
+name: Docker Build and Push
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: Docker Hub Login
+        run: echo ${{secrets.DOCKERHUB_DEVOPS_05_PASSWORD}} | docker login -u faiqdogar -p  --password-stdin
+        name: Build the docker image
+        run: docker build -t my-first-app:v0.0.1

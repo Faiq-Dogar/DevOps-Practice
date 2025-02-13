@@ -1,0 +1,32 @@
+{
+  "name": "web-dev-server",
+  "version": "1.0.0",
+  "description": "A simple server for web development projects",
+  "main": "server.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [
+    "web",
+    "server",
+    "development"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2",
+    "mongoose": "^8.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Faiq-Dogar/CI-CD.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Faiq-Dogar/CI-CD/issues"
+  },
+  "homepage": "https://github.com/Faiq-Dogar/CI-CD#readme"
+}
