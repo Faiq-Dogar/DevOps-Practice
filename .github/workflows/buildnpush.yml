@@ -15,3 +15,4 @@ jobs:
         run: echo ${{secrets.DOCKERHUB_DEVOPS_05_PASSWORD}} | docker login -u faiqdogar -p  --password-stdin
         name: Build the docker image
         run: docker build -t my-first-app:v0.0.1
+        
